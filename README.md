@@ -11,10 +11,11 @@ Praticar consultas LINQ para processar pedidos de usuários, calcular indicadore
 - C#
 - .NET
 - LINQ
+- .NET 10
 
 ## 📚 Conceitos praticados
 
-- `SelectMany`: combina os pedidos dos usuários em uma única sequência.
+- `SelectMany`: transforma os pedidos de cada usuário em uma única sequência, mantendo a associação com o cliente.
 - `GroupBy`: agrupa os pedidos por cliente.
 - `Sum`: calcula o total gasto por cliente.
 - `Average`: calcula a média de valor por pedido.
@@ -57,3 +58,44 @@ Este projeto contribuiu para o desenvolvimento de habilidades em consultas LINQ,
 ---
 
 Projeto desenvolvido para fins de estudo e evolução prática em C#/.NET.
+
+## ▶️ Como executar o projeto localmente
+
+### Pré-requisitos
+
+- [.NET SDK](https://dotnet.microsoft.com/download) instalado.
+- [Git](https://git-scm.com/downloads) instalado.
+
+### Passo a passo
+
+**1. Clone o repositório**
+
+```bash
+git clone https://github.com/byteaugusto/estudos-linq-csharp.git
+```
+
+**2. Entre na pasta do projeto**
+
+```bash
+cd estudos-linq-csharp
+```
+**3. Restaure as dependências**
+
+```bash
+dotnet restore
+```
+
+**4. Execute a aplicação**
+
+```bash
+dotnet run
+```
+
+O programa exibirá os resumos dos clientes que possuem gastos totais superiores a R$ 1.000, incluindo total gasto, média por pedido, quantidade de pedidos e categoria.
+
+### Resultado esperado
+
+- **Carlos:** total gasto de R$ 8.300,00 — categoria Premium.
+- **Lucas:** total gasto de R$ 1.200,00 — categoria Normal.
+
+Os valores são apresentados com base nos dados de exemplo definidos no código.
